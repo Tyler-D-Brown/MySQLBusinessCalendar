@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1250.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewController.calendarViewController">
+  <tabs>
+    <Tab text="Month">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="1300.0">
+               <children>
+                  <TableView fx:id="month" layoutX="10.0" layoutY="10.0" prefHeight="700.0" prefWidth="1230.0">
+                    <columns>
+                      <TableColumn fx:id="mAppID" prefWidth="125.0" text="Appointment ID" />
+                      <TableColumn fx:id="mTitle" minWidth="0.0" prefWidth="250.0" text="Title" />
+                        <TableColumn fx:id="mLoc" prefWidth="150.0" text="Location" />
+                        <TableColumn fx:id="mCon" prefWidth="200.0" text="Contact" />
+                        <TableColumn fx:id="mStrt" prefWidth="250.0" text="Start Time" />
+                        <TableColumn fx:id="mEnd" prefWidth="250.0" text="End Time" />
+                    </columns>
+                  </TableView>
+                  <Button layoutX="250.0" layoutY="720.0" mnemonicParsing="false" onAction="#mAdd" text="Add Appointment" />
+                  <Button layoutX="557.0" layoutY="720.0" mnemonicParsing="false" onAction="#mEdit" text="Edit Appointment" />
+                  <Button layoutX="900.0" layoutY="720.0" mnemonicParsing="false" onAction="#mDelete" text="Delete Appointment" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Week">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="1300.0">
+               <children>
+                  <TableView fx:id="week" layoutX="10.0" layoutY="10.0" prefHeight="700.0" prefWidth="1230.0">
+                     <columns>
+                        <TableColumn fx:id="wAppID" prefWidth="125.0" text="Appointment ID" />
+                        <TableColumn fx:id="wTitle" minWidth="0.0" prefWidth="250.0" text="Title" />
+                        <TableColumn fx:id="wLoc" prefWidth="150.0" text="Location" />
+                        <TableColumn fx:id="wCon" prefWidth="200.0" text="Contact" />
+                        <TableColumn fx:id="wStrt" prefWidth="250.0" text="Start Time" />
+                        <TableColumn fx:id="wEnd" prefWidth="250.0" text="End Time" />
+                     </columns>
+                  </TableView>
+                  <Button layoutX="250.0" layoutY="720.0" mnemonicParsing="false" onAction="#wAdd" text="Add Appointment" />
+                  <Button layoutX="557.0" layoutY="720.0" mnemonicParsing="false" onAction="#wEdit" text="Edit Appointment" />
+                  <Button layoutX="900.0" layoutY="720.0" mnemonicParsing="false" onAction="#wDelete" text="Delete Appointment" />
+               </children>
+            </AnchorPane>
+         </content>
+    </Tab>
+  </tabs>
+</TabPane>

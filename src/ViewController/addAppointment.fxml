@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewController.addAppointmentViewController">
+   <children>
+      <Label layoutX="36.0" layoutY="69.0" text="Title:" />
+      <Label layoutX="36.0" layoutY="105.0" text="Description:" />
+      <Label layoutX="36.0" layoutY="145.0" text="Location:" />
+      <Label layoutX="38.0" layoutY="181.0" text="Contact:" />
+      <Label layoutX="35.0" layoutY="258.0" text="Start:" />
+      <Label layoutX="37.0" layoutY="296.0" text="End:" />
+      <Label layoutX="35.0" layoutY="217.0" text="Date:" />
+      <DatePicker fx:id="date" layoutX="130.0" layoutY="213.0" />
+      <TextField fx:id="title" layoutX="143.0" layoutY="65.0" />
+      <TextField fx:id="desc" layoutX="143.0" layoutY="101.0" />
+      <TextField fx:id="locat" layoutX="143.0" layoutY="141.0" />
+      <TextField fx:id="cont" layoutX="143.0" layoutY="177.0" />
+      <TableView fx:id="clients" layoutX="350.0" layoutY="90.0" prefHeight="200.0" prefWidth="328.0">
+        <columns>
+          <TableColumn fx:id="custID" prefWidth="144.0" text="Customer ID" />
+          <TableColumn fx:id="custName" prefWidth="183.0" text="Customer Name" />
+        </columns>
+      </TableView>
+      <Label layoutX="32.0" layoutY="370.0" text="Type:" />
+      <TextField fx:id="type" layoutX="145.0" layoutY="365.0" />
+      <Button layoutX="360.0" layoutY="292.0" mnemonicParsing="false" onAction="#addClient" text="Add Client" />
+      <Button layoutX="548.0" layoutY="291.0" mnemonicParsing="false" onAction="#deleteClient" text="Delete Client" />
+      <Button layoutX="614.0" layoutY="396.0" mnemonicParsing="false" onAction="#cancel" text="Cancel" />
+      <Button layoutX="533.0" layoutY="396.0" mnemonicParsing="false" onAction="#submit" text="Submit" />
+      <Label layoutX="219.0" layoutY="258.0" text=":" />
+      <TextField fx:id="strtHour" layoutX="142.0" layoutY="253.0" prefHeight="31.0" prefWidth="67.0" />
+      <TextField fx:id="strtMin" layoutX="235.0" layoutY="253.0" prefHeight="31.0" prefWidth="60.0" />
+      <TextField fx:id="strtAM" layoutX="295.0" layoutY="253.0" prefHeight="31.0" prefWidth="41.0" text="AM" />
+      <TextField fx:id="endHour" layoutX="142.0" layoutY="292.0" prefHeight="31.0" prefWidth="67.0" />
+      <TextField fx:id="endMin" layoutX="235.0" layoutY="292.0" prefHeight="31.0" prefWidth="60.0" />
+      <Label layoutX="220.0" layoutY="296.0" text=":" />
+      <TextField id="amPm" fx:id="endAM" layoutX="295.0" layoutY="292.0" prefHeight="31.0" prefWidth="41.0" text="AM" />
+      <Label layoutX="34.0" layoutY="332.0" text="URL" />
+      <TextField fx:id="url" layoutX="145.0" layoutY="327.0" />
+      <Button layoutX="456.0" layoutY="291.0" mnemonicParsing="false" onAction="#edit" text="Edit Client" />
+   </children>
+</Pane>

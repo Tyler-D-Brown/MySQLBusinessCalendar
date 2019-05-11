@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="419.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewController.reportUserIDCountController">
+  <tabs>
+    <Tab text="Jan">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="jan" layoutX="11.0" layoutY="10.0" prefHeight="342.0" prefWidth="579.0">
+                    <columns>
+                      <TableColumn fx:id="janID" prefWidth="181.0" text="User ID" />
+                      <TableColumn fx:id="janUser" prefWidth="87.0" text="User Name" />
+                      <TableColumn fx:id="janCon" prefWidth="87.0" text="Count" />
+                    </columns>
+                  </TableView>
+                  <Button layoutX="274.0" layoutY="352.0" mnemonicParsing="false" onAction="#exit" text="Exit" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Feb">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="feb" layoutX="11.0" layoutY="10.0" prefHeight="342.0" prefWidth="579.0">
+                     <columns>
+                        <TableColumn fx:id="febID" prefWidth="181.0" text="User ID" />
+                        <TableColumn fx:id="febUser" prefWidth="87.0" text="User Name" />
+                        <TableColumn fx:id="febCon" prefWidth="87.0" text="Count" />
+                     </columns>
+                  </TableView>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab text="Mar">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="mar" layoutX="11.0" layoutY="10.0" prefHeight="342.0" prefWidth="579.0">
+                     <columns>
+                        <TableColumn fx:id="marID" prefWidth="181.0" text="User ID" />
+                        <TableColumn fx:id="marUser" prefWidth="87.0" text="User Name" />
+                        <TableColumn fx:id="marCon" prefWidth="87.0" text="Count" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Apr">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="apr" layoutX="11.0" layoutY="10.0" prefHeight="342.0" prefWidth="579.0">
+                     <columns>
+                        <TableColumn fx:id="aprID" prefWidth="181.0" text="User ID" />
+                        <TableColumn fx:id="aprUser" prefWidth="87.0" text="User Name" />
+                        <TableColumn fx:id="aprCon" prefWidth="87.0" text="Count" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="May">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="may" layoutX="11.0" layoutY="10.0" prefHeight="342.0" prefWidth="579.0">
+                     <columns>
+                        <TableColumn fx:id="mayID" prefWidth="181.0" text="User ID" />
+                        <TableColumn fx:id="mayUser" prefWidth="87.0" text="User Name" />
+                        <TableColumn fx:id="mayCon" prefWidth="87.0" text="Count" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Jun">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="jun" layoutX="11.0" layoutY="10.0" prefHeight="342.0" prefWidth="579.0">
+                     <columns>
+                        <TableColumn fx:id="junID" prefWidth="181.0" text="User ID" />
+                        <TableColumn fx:id="junUser" prefWidth="87.0" text="User Name" />
+                        <TableColumn fx:id="junCon" prefWidth="87.0" text="Count" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Jul">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="jul" layoutX="11.0" layoutY="10.0" prefHeight="342.0" prefWidth="579.0">
+                     <columns>
+                        <TableColumn fx:id="julID" prefWidth="181.0" text="User ID" />
+                        <TableColumn fx:id="julUser" prefWidth="87.0" text="User Name" />
+                        <TableColumn fx:id="julCon" prefWidth="87.0" text="Count" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Aug">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="aug" layoutX="11.0" layoutY="10.0" prefHeight="342.0" prefWidth="579.0">
+                     <columns>
+                        <TableColumn fx:id="augID" prefWidth="181.0" text="User ID" />
+                        <TableColumn fx:id="augUser" prefWidth="87.0" text="User Name" />
+                        <TableColumn fx:id="augCon" prefWidth="87.0" text="Count" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Sep">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="sep" layoutX="11.0" layoutY="10.0" prefHeight="342.0" prefWidth="579.0">
+                     <columns>
+                        <TableColumn fx:id="sepID" prefWidth="181.0" text="User ID" />
+                        <TableColumn fx:id="sepUser" prefWidth="87.0" text="User Name" />
+                        <TableColumn fx:id="sepCon" prefWidth="87.0" text="Count" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Oct">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="oct" layoutX="11.0" layoutY="10.0" prefHeight="342.0" prefWidth="579.0">
+                     <columns>
+                        <TableColumn fx:id="octID" prefWidth="181.0" text="User ID" />
+                        <TableColumn fx:id="octUser" prefWidth="87.0" text="User Name" />
+                        <TableColumn fx:id="octCon" prefWidth="87.0" text="Count" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Nov">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="nov" layoutX="11.0" layoutY="10.0" prefHeight="342.0" prefWidth="579.0">
+                     <columns>
+                        <TableColumn fx:id="novID" prefWidth="181.0" text="User ID" />
+                        <TableColumn fx:id="novUser" prefWidth="87.0" text="User Name" />
+                        <TableColumn fx:id="novCon" prefWidth="87.0" text="Count" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Dec">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="dec" layoutX="11.0" layoutY="10.0" prefHeight="342.0" prefWidth="579.0">
+                     <columns>
+                        <TableColumn fx:id="decID" prefWidth="181.0" text="User ID" />
+                        <TableColumn fx:id="decUser" prefWidth="87.0" text="User Name" />
+                        <TableColumn fx:id="decCon" prefWidth="87.0" text="Count" />                        
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>

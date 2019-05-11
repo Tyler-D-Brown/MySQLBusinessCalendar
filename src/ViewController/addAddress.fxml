@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="628.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewController.addAddressViewController">
+   <children>
+      <TextField fx:id="address" layoutX="126.0" layoutY="20.0" />
+      <TextField fx:id="address2" layoutX="126.0" layoutY="72.0" />
+      <TextField fx:id="postalCode" layoutX="126.0" layoutY="120.0" />
+      <TextField fx:id="phone" layoutX="126.0" layoutY="170.0" />
+      <TableView fx:id="city" layoutX="325.0" layoutY="50.0" prefHeight="221.0" prefWidth="274.0">
+        <columns>
+          <TableColumn fx:id="cityID" prefWidth="75.0" text="City ID" />
+          <TableColumn fx:id="cityName" prefWidth="198.0" text="City Name" />
+        </columns>
+      </TableView>
+      <Button layoutX="50.0" layoutY="250.0" mnemonicParsing="false" onAction="#submit" text="Submit" />
+      <Button layoutX="150.0" layoutY="250.0" mnemonicParsing="false" onAction="#cancel" text="Cancel" />
+      <Label layoutX="15.0" layoutY="25.0" text="Address:" />
+      <Label layoutX="15.0" layoutY="75.0" text="Address 2:" />
+      <Label layoutX="425.0" layoutY="25.0" text="City" />
+      <Label layoutX="15.0" layoutY="125.0" text="Postal Code:" />
+      <Label layoutX="15.0" layoutY="175.0" text="Phone:" />
+      <Button layoutX="325.0" layoutY="275.0" mnemonicParsing="false" onAction="#add" text="Add" />
+      <Button layoutX="425.0" layoutY="275.0" mnemonicParsing="false" onAction="#edit" text="Edit" />
+      <Button layoutX="525.0" layoutY="275.0" mnemonicParsing="false" onAction="#delete" text="Delete" />
+   </children>
+</Pane>

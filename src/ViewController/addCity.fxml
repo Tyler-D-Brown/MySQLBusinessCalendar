@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="260.0" prefWidth="498.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewController.addCityController">
+   <children>
+      <Label layoutX="26.0" layoutY="33.0" text="City Name:" />
+      <TextField fx:id="city" layoutX="19.0" layoutY="68.0" />
+      <TableView fx:id="country" layoutX="214.0" layoutY="14.0" prefHeight="200.0" prefWidth="261.0">
+        <columns>
+          <TableColumn fx:id="countryId" prefWidth="87.0" text="Country ID" />
+          <TableColumn fx:id="countryName" prefWidth="173.0" text="Country Name" />
+        </columns>
+      </TableView>
+      <Button layoutX="214.0" layoutY="214.0" mnemonicParsing="false" onAction="#add" text="Add" />
+      <Button layoutX="322.0" layoutY="214.0" mnemonicParsing="false" onAction="#edit" text="Edit" />
+      <Button layoutX="410.0" layoutY="214.0" mnemonicParsing="false" onAction="#delete" text="Delete" />
+      <Button layoutX="80.0" layoutY="115.0" mnemonicParsing="false" onAction="#submit" text="Submit" />
+      <Button layoutX="81.0" layoutY="167.0" mnemonicParsing="false" onAction="#cancel" text="Cancel" />
+   </children>
+</Pane>

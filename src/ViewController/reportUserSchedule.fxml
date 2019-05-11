@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="770.0" prefWidth="1246.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewController.reportUserScheduleController">
+   <children>
+      <TableView fx:id="month" layoutX="8.0" layoutY="14.0" prefHeight="700.0" prefWidth="1230.0">
+         <columns>
+            <TableColumn fx:id="appID" prefWidth="125.0" text="Appointment ID" />
+            <TableColumn fx:id="title" minWidth="0.0" prefWidth="250.0" text="Title" />
+            <TableColumn fx:id="location" prefWidth="150.0" text="Location" />
+            <TableColumn fx:id="contact" prefWidth="200.0" text="Contact" />
+            <TableColumn fx:id="strt" prefWidth="250.0" text="Start Time" />
+            <TableColumn fx:id="end" prefWidth="250.0" text="End Time" />
+         </columns>
+      </TableView>
+      <Button layoutX="591.0" layoutY="725.0" mnemonicParsing="false" onAction="#exit" text="Exit" />
+   </children>
+</Pane>
